@@ -1,4 +1,4 @@
-OPDRACHT 2
+LES 1 - OPDRACHT 2
 
 ====
 
@@ -23,7 +23,7 @@ OPDRACHT 2
 ## 2.2 Functionaliteiten van jQuery ##
 
 * AJAX ondersteuning
-* DOM-manipulatie
+* Events
 * Anchors
 * Selectors (werkt handig)
 * Smooth Animations (heel simpel te programmeren)
@@ -34,3 +34,19 @@ Over alternatieven op microjs.com
 ### AJAX ondersteuning ###
 - Alternatief: 'MicroAjax'
 - URL: https://code.google.com/p/microajax/
+
+### Events ###
+- Alternatief: 'MiniEvents'
+- URL: https://github.com/allouis/minivents
+
+### Anchors ###
+- Alternatief: 'Grapnel'
+- URL: https://github.com/EngineeringMode/Grapnel.js
+
+### Selectors ###
+- Alternatief: 'Zest'
+- URL: https://github.com/chjj/zest
+
+### Smooth Animations ###
+- Alternatief: 'Firmin'
+- URL: http://extralogical.net/projects/firmin/
