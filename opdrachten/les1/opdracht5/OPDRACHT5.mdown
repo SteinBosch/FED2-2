@@ -25,18 +25,16 @@ CMDGEO-0.1.js
 ## Nieuwe objecten met methodes/eigenschappen ##
 
 ### Debugger: ###
-- Debugger.debugId()
-- Debugger.message()
-- Debugger.error_handler()
+- Debugger.debugId
+- Debugger.message
+- Debugger.errorHandler
 
 ### GeoMap: ###
 - GeoMap.canvasID
-- GeoMap.markerLatLng
-- GeoMap.markerRij
-- GeoMap.currentPositionMarker
-- GeoMap.routeList
-- GeoMap.canvasOptions (voormalig myOptions)
-- GeoMap.update_position()
+- GeoMap.myOptions
+- GeoMap.isNumber
+- Geomap.updatePositie
+- Geomap.generate
 
 ### User: ###
 - User.GPS_status()
@@ -45,13 +43,12 @@ CMDGEO-0.1.js
 ### Tour: ###
 - Tour.tourType
 - Tour.locatieRij
-- Tour.init()
-- Tour.refresh_rate
-- Tour.start_interval()
-- Tour.current_position()
-- Tour.update_position()
-- Tour.check_locations()
-- Tour.calculate_distance()
+- Tour.init
+- Tour.refreshRate
+- Tour.startInterval
+- Tour.updatePosition
+- Tour.checkLocations
+- Tour.calculateDistance
 
 
 
