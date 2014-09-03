@@ -30,3 +30,4 @@ var Person = {
 		console.log('Hello, my name is ' + name + '!');
 	}
 }
+
