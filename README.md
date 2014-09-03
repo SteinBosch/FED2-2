@@ -10,9 +10,18 @@ Frontend Development 2
 
 ## Best Practices ##
 
+### Algemeen ###
+
 * Code indenting
-* OOP
 * Commented code
-* camelCase function names
 * Gestructureerde mappenstructuur
-* Eentalig
+* Eentalig naamgebruik
+* Gescheiden bestanden voor opmaak, events en tekst.
+
+### HTML ###
+
+### CSS ###
+
+### Javascipt ###
+* OOP
+* camelCase function names
