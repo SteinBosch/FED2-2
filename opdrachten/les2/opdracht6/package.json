@@ -1,0 +1,24 @@
+{
+  "name": "Jeffrey-Dolk-Metselwerken",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A beautiful theme for Jeffrey Dolk",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "Metselwerken",
+    "Lijmwerk",
+    "Wordpress",
+    "Portfolio"
+  ],
+  "author": "RK Mediadesign",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.9.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-autoprefixer": "^0.8.1"
+  }
+}

@@ -1,0 +1,64 @@
+#project-header {
+	transition: background 1.5s linear;
+	position:relative;
+	&:before {
+		@include filter-gradient(#a60000, #000000, vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(0,0,0,0) 18%,rgba(0,0,0,0.65) 77%));
+		top: 0;
+		width: 100%;
+		left: 0;
+		height: 100%;
+		content:"";
+		position: absolute;
+	}
+	background: url('../images/large_bg1.jpg') no-repeat center center;
+	background-size: cover;
+	min-height: 35em;
+	h1 {
+		margin-top: 6em;
+		margin-bottom: 0;
+		color: $white;
+		font-size: 3.3em;
+	}
+	.category {
+		font-size: 3em;
+		font-weight: 400;
+	}
+}
+.project_content_container {
+	padding-top:4.5em;
+	padding-bottom: 4.5em;
+}
+.project_content {
+	@extend %grid__item;
+	@extend %desk--two-thirds;
+	@extend %lap--two-thirds;
+	padding-left: 0;
+	padding-right: 2em;
+	border-right: 1px solid #cccccc;
+}
+.project_content_sidebar {
+	padding-left: 2em;
+	color: $content-pale;
+	@extend %grid__item;
+	@extend %desk--one-third;
+	@extend %lap--one-third;
+	h3 {
+		text-transform: uppercase;
+		color: $black;
+		font-size: 1.2em;
+		font-weight: 600;
+	}
+	.project-info {
+		margin-top: 1em;
+		list-style-type: none;
+		li {
+			line-height: 1.6em;
+			font-size: 1.1em;
+		}
+		i {
+			vertical-align:middle;
+			margin-right: 0.5em;
+		}
+	}
+}

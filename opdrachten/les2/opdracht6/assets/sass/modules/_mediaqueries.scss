@@ -1,0 +1,242 @@
+@include mediaQuery(desk-wide) {
+	#content {
+		font-size: 110% !important;
+	}
+}
+@include mediaQuery(desk) {
+	#contact .contact-sidebar {
+		width: 24%;
+	}
+	#specialiteiten article {
+		width: 49%;
+	}
+	header {
+		#site-navigation {
+			min-width: 37em;
+		}
+	}
+}
+@include mediaQuery(portable) {
+	#contact {
+		.contact-sidebar {
+			border-left: 0;
+			border-top: 1px solid #cccccc;
+			padding-left:0;
+			padding-top: 2em;
+			margin-top: 2em;
+		}
+		.contact-form {
+			border-right: 0;
+			padding-right: 0;
+		}
+	}
+}
+@include mediaQuery(lap) {
+	#content {
+		font-size: 95% !important;
+	}
+	#home {
+		.site-bottom-wall .contact-methods {
+			padding-top: 0;
+			position: relative;
+			z-index: 9;
+		}
+	}
+	#over-mij {
+		article {
+			text-align:center;
+		}
+		.profile-picture, .about {
+			padding-left: 0;
+		}
+		.about {
+			max-width: 36em;
+			margin:0 auto !important;
+		}
+		h2 {
+			text-align:center;
+			margin-top: 1em;
+		}
+	}
+}
+@include mediaQuery(palm-and-bigPalm) {
+	header {
+		.wrapper {
+			padding: 0;
+			position:static;
+		}
+		.menu-toggle {
+			display: block;
+		}
+		#site-navigation {
+			width:100%;
+			left: 0;
+			top: 0;
+			display:none; // toggle display table
+			// opacity: 0;
+			position:absolute;
+			z-index: 99998;
+			background-color: rgba(0,0,0,.9);
+			// transition: opacity 1s ease-in-out;
+			ul li {
+				color: $white;
+				text-align: center;
+				display:block;
+				margin: 0;
+			}
+			ul li a {
+				color: $white;
+				font-size: 1.8em;
+			}
+			&.active {
+				display: table !important;
+				// opacity: 1;
+			}
+		}
+		.menu-hoofdmenu-container {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	#home {
+		.site-intro {
+			margin-top: 4em;
+			.site-branding {
+				padding-top: 4em;
+			}
+		}
+		.site-top-wall {
+			background-size: 100% !important;
+			height: 16em;
+			position: relative;
+			text-align:center;
+			margin-top: 2em;
+		}
+		.site-bottom-wall {
+			background: url('../images/bottomwall.svg') no-repeat center top;
+			background-size: 100% !important;
+			height: auto;
+			min-height: 12em;
+			position: relative;
+			text-align: center;
+			.contact-methods {
+				padding-top: 0;
+				padding-bottom: 4em;
+			}
+			.contact-methods .offerte-link {
+				margin-top: 0;
+				margin-right: 6em;
+			}
+		}
+		.site-top-wall .brand-logo {
+			position: relative;
+			margin: -2em auto 0 auto;
+			left: 0.3em;
+			background-position: 0.4em center;
+		}
+		.site-about {
+			padding-top: 0;
+			text-align:left;
+			article {
+				padding-left: 0 !important;
+			}
+		}
+	}
+	#projecten {
+		.featured_project.large .wrapper {
+			display:block;
+		}
+		.featured_project.small {
+			min-height: 15em !important;
+		}
+	}
+	.project_content {
+		width: 100% !important;
+		padding-right: 0;
+		padding-bottom: 2em;
+		border-right: 0;
+		border-bottom: 1px solid #cccccc;
+	}
+	.project_content_sidebar {
+		width: 100% !important;
+		padding-left: 0;
+		padding-top: 2em;
+	}
+	.project_preview_container {
+		.project_preview_image {
+			padding-left: 0;
+			width: 100% !important;
+		}
+		.project_preview_text {
+			padding-left: 0;
+			padding-top: 2em;
+			width: 100% !important;
+		}
+	}
+	#over-mij {
+		.profile-picture, .about {
+			padding-left: 0;
+		}
+		h2 {
+			text-align:center;
+			margin-top: 1em;
+		}
+	}
+}
+@include mediaQuery(bigPalm) {
+	#content {
+		font-size: 90% !important;
+	}
+	#home {
+		.site-bottom-wall {
+			min-height: 17em;
+		}
+	}
+}
+@include mediaQuery(palm) {
+	header {
+		font-size: 90%;
+	}
+	#content {
+		font-size: 80% !important;
+	}
+	#home {
+		#home_fold .site-intro{
+			h1 {
+				font-size: 3em;
+			}
+			h2 {
+				font-size: 2.4em;
+			}
+		}
+	}
+	footer {
+		.site-info {
+			.footer-adress, .footer-meta, .footer-contact {
+				padding-left: 0;
+			}
+			.footer-meta, .footer-contact {
+				margin-top: 2em;
+			}
+		}
+		.copyright {
+			.rkmediadesign, .jdolkmetselwerken {
+				padding-left: 0;
+				text-align: left;
+			}
+		}
+	}
+}
+
+@include mediaQuery(smallPalm) {
+	#home {
+		#home_fold .site-intro{
+			h1 {
+				font-size: 2.5em;
+			}
+			h2 {
+				font-size: 1.9em;
+			}
+		}
+	}
+}

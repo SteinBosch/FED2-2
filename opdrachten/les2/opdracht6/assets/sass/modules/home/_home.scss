@@ -1,0 +1,141 @@
+#home {
+	#home_fold {
+		width: 100%;
+		position:relative;
+		background: url('../images/large_bg1.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.site-intro {
+		height: 85%;
+		.wrapper {
+			display: table;
+			height: 100%;
+		}
+		.site-branding {
+			vertical-align: middle;
+			display: table-cell;
+			color: $white;
+			z-index: 2;
+			position: relative;
+		}
+		.readmore-home {
+			margin-top: 0.6em;
+			display:inline-block;
+		}
+		.readmore {
+			display: block;
+			padding: 1em 1.5em;
+			background-color: $primary-brown;
+			color: $white;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: all 0.1s ease;
+			&:hover {
+				background-color: lighten($primary-brown, 3%);
+			}
+		}
+	}
+	.site-top-wall {
+		height: 100%;
+		width: 100%;
+		background: url('../images/top-wall.svg') no-repeat center bottom -1px;
+		background-size: 100%;
+		z-index: 1;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		.wrapper {
+			position: relative;
+			height: 100%;
+		}
+		.brand-logo {
+			background: url('../images/logo.svg') no-repeat center center;
+			width: 13em;
+			height: 13em;
+			background-size: contain;
+			position: absolute;
+			right: 1.5em;
+			bottom: 1.5em;
+		}
+	}
+	#home-intro {
+		background-color: $secondary-brown;
+		position: relative;
+		min-height: 100%;
+		height: 100%;
+		padding-bottom: 5em;
+	}
+	.site-bottom-wall {
+		background: url('../images/bottom-wall.svg') no-repeat center top;
+		background-size: 100%;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		.contact-methods {
+			padding-top: 4em;
+			position: relative;
+			z-index: 9;
+			.offerte-link, .contact-link {
+				width: 7em;
+				height: 7em;
+				background-color: $primary-brown;
+				border-radius: 50%;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.offerte-link {
+				margin-top: 4em;
+				margin-right: 3em;
+			}
+			.inner {
+				background-color: $white;
+				display: block;
+				height: 6.7em;
+				width: 6.7em;
+				border-radius: 50%;
+				margin-top: 0.15em;
+			}
+			.inner i {
+				display: block;
+				color: $black;
+				font-size: 4em;
+				margin: 0 auto;
+				padding-top: 0.1em;
+				&:before {
+					display:block;
+				}
+			}
+		}
+	}
+	.site-about {
+		padding-top: 10em;
+		text-align: right;
+		color: $white;
+		.wrapper article {
+			@extend %grid__item;
+			@extend %desk--four-sixths;
+			max-width: 36em;
+		}
+		.readmore-site-about {
+			margin-top: 2em;
+			position: relative;
+			z-index: 8;
+			display:inline-block;
+		}
+		.readmore {
+			display: block;
+			padding: 1em 1.5em;
+			background-color: $white;
+			color: $primary-brown;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: all 0.1s ease;
+			&:hover {
+				background-color: lighten($white, 3%);
+			}
+		}
+	}
+}

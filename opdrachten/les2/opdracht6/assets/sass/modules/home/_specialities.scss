@@ -1,0 +1,48 @@
+#specialiteiten {
+	padding-bottom: 5em;
+	.divider {
+		background-color: $primary-brown;
+	}
+	article {
+		@extend %grid__item;
+		@extend %desk--one-half;
+		padding: 1.5em 1.5em;
+		text-align: center;
+		// width:49%;
+		p {
+			max-width: 36em;
+			margin: 0 auto;
+		}
+	}
+	.icon {
+		margin: 0 auto;
+		text-align: center;
+		width: 7em;
+		height: 7em;
+		background-color: $primary-brown;
+		border-radius: 50%;
+		display:inline-block;
+		vertical-align: top;
+		margin-bottom: 1em;
+		.inner  {
+			background-color: $beige;
+			display: block;
+			height: 6.7em;
+			width: 6.7em;
+			border-radius: 50%;
+			margin-top: 0.15em;
+		}
+		.inner i {
+			display: block;
+			color: $black;
+			font-size: 6em;
+			vertical-align:middle;
+			&.icon-lijmtroffel {
+				font-size: 7em;
+			}
+			&:before {
+				display: block;
+			}
+		}
+	}
+}

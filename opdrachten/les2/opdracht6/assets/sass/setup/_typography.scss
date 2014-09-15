@@ -1,0 +1,188 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url("../fonts/font.css");
+
+@font-face {
+  font-family: 'dearjoe_6_trialregular';
+  src: url('../fonts/dearjoe_6_trial-webfont.eot');
+  src: url('../fonts/dearjoe_6_trial-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/dearjoe_6_trial-webfont.woff') format("woff"), url('../fonts/dearjoe_6_trial-webfont.ttf') format("truetype"), url('../fonts/dearjoe_6_trial-webfont.svg#dearjoe_6_trialregular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	speak: none;
+	font-smoothing: antialiased;
+}
+// Vertical-align hack fix
+h1, h2, h3, h4, h5, p, a, blockquote, span {
+	letter-spacing: 0.02em;
+	text-rendering: optimizeLegibility;
+}
+
+button, a {
+	border-radius: 5px;
+}
+h1 {
+	font-size: 2.6em;
+	font-weight: 600;
+	.subtitle {
+		font-weight: 400;
+	}
+	text-transform: uppercase;
+}
+.category, .site-description {
+	font-family: 'dearjoe_6_trialregular';
+	a {
+		text-decoration: none;
+	}
+}
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+p {
+	margin-bottom: 1em;
+	line-height: 1.6em;
+}
+p, a, blockquote {
+	font-size: 1.1em;
+}
+span.divider {
+	font-size:2em;
+}
+// HEADER
+#site-navigation {
+	ul li a {
+		font-weight: 600;
+		color: $content-pale;
+		font-size: 1em;
+	}
+}
+
+// SECTIONS
+#home {
+	text-align: left;
+	.site-title {
+		font-size: 3.5em;
+		margin-bottom:0.1em;
+	}
+	.site-description {
+		font-size: 3em;
+		font-weight: 400;
+	}
+	button a {
+		font-size: 1.2em;
+		font-weight: 400;
+	}
+}
+#home-intro {
+	.site-about h1 {
+		font-size: 2.1em;
+	}
+	.contact-methods {
+		.inner {
+			text-align:center;
+		}
+		a {
+			text-decoration: none;
+			color: $black;
+			font-size: 1em;
+			font-weight: 600;
+		}
+	}
+}
+#specialiteiten h2, #over-mij h2 {
+	font-family: 'dearjoe_6_trialregular';
+	font-weight: 400;
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+	color: $black;
+}
+#specialiteiten h1, #over-mij h1, #contact h1 {
+	font-size: 2.1em;
+	text-align: center;
+	color: $black;
+}
+#specialiteiten p {
+	color: $content-pale;
+}
+.featured_project.large {
+	text-align: left;
+	h1 {
+		font-size: 3.3em;
+		margin-bottom: 0;
+	}
+	.category {
+		font-size: 3em;
+		font-weight: normal;
+	}
+	.button {
+		margin-top: 1em;
+		min-width:12.2em;
+		display: inline-block;
+		&:first-child {
+			margin-right: 2em;
+		}
+	}
+	.project-link {
+		display: block;
+		padding: 1em 1.5em;
+		background-color: $primary-brown;
+		color: $white;
+		text-transform: uppercase;
+		text-decoration: none;
+		width: auto;
+		transition: all 0.1s ease;
+		&:hover {
+			background-color: lighten($primary-brown, 3%);
+		}
+		&.all {
+			background-color: $white;
+			color: $primary-brown;
+			transition: all 0.1s ease;
+			&:hover {
+				background-color: lighten($white, 3%);
+			}
+		}
+	}
+}
+.featured_project.small {
+	text-align:left;
+	padding: 1.5em;
+	position: relative;
+	.project_description {
+		position: absolute;
+		bottom: 1.5em;
+		h2 {
+			font-size: 1.8em;
+		}
+		.category {
+			font-size: 1.3em;
+			font-weight: 400;
+		}
+	}
+}
+#over-mij {
+	.about {
+		text-align:left;
+	}
+	p {
+		color: $content-pale;
+	}
+}
+
+#contact {
+	text-align: left;
+}
+.copyright p {
+	font-size: 1em !important;
+}

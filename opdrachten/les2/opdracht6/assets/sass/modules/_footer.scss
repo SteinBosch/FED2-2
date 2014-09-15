@@ -1,0 +1,58 @@
+footer {
+	#gmap {
+		width: 100%;
+		min-height: 25em;
+		border-bottom: 15px solid $secondary-brown;
+	}
+	.site-info {
+		border-top: 10px solid $white;
+		background: url('../images/footer_bg.svg') no-repeat center center;
+		background-size: cover;
+		padding: 2em 0 2em 0;
+		.footer-adress, .footer-meta, .footer-contact {
+			@extend %grid__item;
+			@extend %desk--one-third;
+			@extend %lap--one-third;
+			@extend %palm--one-whole;
+			text-align: left;
+			h3 {
+				font-size: 1.2em;
+				color: $black;
+				margin-bottom: 1em;
+			}
+			p, a {
+				color: $content-pale;
+				font-size: 1em;
+			}
+		}
+	}
+	.copyright {
+		width:100%;
+		background-color: $content-pale;
+		color: $white;
+		.rkmediadesign, .jdolkmetselwerken {
+			@extend %grid__item;
+			@extend %desk--one-half;
+		}
+		.rkmediadesign {
+			a {
+				display:inline-block;
+				vertical-align:middle;
+				color: $white;
+				text-decoration: none;
+			}
+			.rk-icon {
+				background: url('../images/rkmediadesign.svg') no-repeat center center;
+				background-size: 100%;
+				height:2.4em;
+				width: 2.4em;
+				margin-left: 1em;
+				margin-right: 0.5em;
+			}
+		}
+		.jdolkmetselwerken {
+			text-align: right;
+			padding-top: 0.5em;
+		}
+	}
+}

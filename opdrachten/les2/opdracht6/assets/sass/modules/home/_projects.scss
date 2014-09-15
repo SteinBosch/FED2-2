@@ -1,0 +1,57 @@
+#projecten {
+	.featured_project {
+		&:before {
+			transition: background 0.3s ease;
+			width:100%;
+			height: 100%;
+			content:"";
+			position: absolute;
+			left:0;
+		}
+		background-size: cover;
+		// needs latest Compass, add '@import "compass"' to your scss
+
+		&.large {
+			display:table;
+			.wrapper {
+				display:table-cell;
+				vertical-align:middle;
+			}
+			&:before {
+				@include filter-gradient(#000000, #a60000, vertical); // IE6-9
+				@include background-image(linear-gradient(top,  rgba(0,0,0,0.65) 18%,rgba(0,0,0,0) 77%));
+				top: 0;
+			}
+			width: 100%;
+			min-height: 30em;
+			padding-bottom: 3em;
+			position: relative;
+		}
+		&.small {
+			&:before {
+				background: rgba(0, 0, 0, 0.5);
+				bottom:0;
+			}
+			@extend %grid__item;
+			@extend %desk--one-third;
+			@extend %portable--one-whole;
+			min-height: 20em;
+			background-size: cover !important;
+		}
+		.project_description {
+			padding-right: 1.5em;
+			h2 {
+				text-transform: uppercase;
+			}
+		}
+		h1 a, h2 a {
+			text-decoration: none;
+			color: $white;
+		}
+	}
+	.featured_project.small:hover {
+		&:before {
+			background: rgba(0, 0, 0, 0.85);
+		}
+	}
+}

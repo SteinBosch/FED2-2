@@ -1,0 +1,118 @@
+#contact {
+	padding-bottom: 5em;
+	position: relative;
+	h1 {
+		text-align: center;
+	}
+	.divider {
+		background-color: $secondary-brown;
+	}
+	.contact-form {
+		@extend %grid__item;
+		@extend %desk--three-quarters;
+		color: $content-pale;
+		padding-right: 3em;
+		padding-left: 0;
+		border-right: 1px solid #cccccc;
+	}
+	#contact-tabs {
+		margin-top: 2em;
+		border: 1px solid #cccccc;
+		border-radius: 5px;
+		ul {
+			list-style-type: none;
+		}
+
+		li {
+			background-color: $beige;
+			padding: 1em 2em;
+			float:left;
+			width:50%;
+			&:first-child {
+				border-top-left-radius: 5px;
+			}
+			&:last-child {
+				border-top-right-radius: 5px;
+			}
+			&.ui-state-active {
+				background-color: $white;
+				a {
+					color: $black;
+				}
+
+			}
+			a {
+				display: inline-block;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $content-pale;
+				vertical-align:middle;
+				font-weight: 600;
+			}
+			i {
+				display:inline-block;
+				vertical-align:middle;
+				margin-right: 0.3em;
+				font-size: 1.8em;
+			}
+		}
+		#offerte-1, #contact-2 {
+			padding:6em 2em 2em 2em;
+		}
+		.wpcf7-form {
+			margin-top: 1.5em;
+			input, textarea {
+				background-color: #f2f2f2;
+				min-height: 2.5em;
+				color: $content-pale;
+				width: 100%;
+				border-radius: 5px;
+				padding: 0.5em;
+			}
+			textarea {
+				width: 100%;
+			}
+			input[type="submit"] {
+				display: block;
+				padding: 1em 1.5em;
+				background-color: $primary-brown;
+				color: $white;
+				text-transform: uppercase;
+				text-decoration: none;
+				width: auto;
+				transition: all 0.1s ease;
+				&:hover {
+					background-color: lighten($primary-brown, 3%);
+				}
+			}
+		}
+	}
+	.contact-sidebar {
+		@extend %grid__item;
+		@extend %desk--one-quarter;
+		padding-left: 3em;
+		color: $content-pale;
+		h2 {
+			font-size: 1.2em;
+			font-weight: 600;
+			margin-bottom: 1em;
+		}
+		a {
+			color: $content-pale;
+			font-size: 1em;
+			text-decoration:none;
+		}
+	}
+}
+#contact:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 10px;
+	background-color: $content-pale;
+	opacity: 0.1;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	z-index: 20;
+}

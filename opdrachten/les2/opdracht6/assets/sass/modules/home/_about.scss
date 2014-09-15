@@ -1,0 +1,32 @@
+#over-mij {
+	padding-bottom: 5em;
+	background-color: $beige;
+	h1 {
+		text-align: center;
+	}
+	.divider {
+		background-color: $primary-brown;
+	}
+	article {
+		max-width: 60em;
+		margin: 0 auto;
+	}
+	.profile-picture {
+		@extend %grid__item;
+		@extend %desk--one-third;
+		@extend %portable--one-whole;
+		text-align: center;
+		figure {
+			margin: 0 auto;
+			border-radius: 50%;
+			background-size: 100% !important;
+			height: 15em;
+			width: 15em;
+		}
+	}
+	.about {
+		@extend %grid__item;
+		@extend %desk--two-thirds;
+		@extend %portable--one-whole;
+	}
+}
